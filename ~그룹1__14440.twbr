@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20221.22.0324.2209                               -->
-<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
@@ -15,6 +15,7 @@
     <SheetIdentifierTracking />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location id='_16523401661490' path='/workbooks' revision='1.2' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -25,627 +26,6 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='group2' inline='true' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='group2' name='textscan.04yu1d403evo0p1beqfim11doqzw'>
-            <connection class='textscan' directory='C:/Users/User/Desktop/새 폴더/MZ-trend' filename='group2.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.04yu1d403evo0p1beqfim11doqzw' name='group2.csv' table='[group2#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
-            <column datatype='integer' name='구분' ordinal='0' />
-            <column datatype='integer' name='악궁구조' ordinal='1' />
-            <column datatype='integer' name='나이' ordinal='2' />
-            <column datatype='integer' name='성별' ordinal='3' />
-            <column datatype='integer' name='비뚠니' ordinal='4' />
-            <column datatype='integer' name='1년이내스케일링' ordinal='5' />
-            <column datatype='integer' name='사랑니' ordinal='6' />
-            <column datatype='integer' name='시린니' ordinal='7' />
-            <column datatype='integer' name='구취' ordinal='8' />
-            <column datatype='integer' name='치아흔들림' ordinal='9' />
-            <column datatype='integer' name='흡연' ordinal='10' />
-            <column datatype='integer' name='탄산음료섭취' ordinal='11' />
-            <column datatype='integer' name='잇몸부종,통증' ordinal='12' />
-            <column datatype='integer' name='양치시간(분)' ordinal='13' />
-            <column datatype='integer' name='하루양치질(회)' ordinal='14' />
-            <column datatype='integer' name='전체회차' ordinal='15' />
-            <column datatype='integer' name='진행된회차' ordinal='16' />
-            <column datatype='string' name='추천칫솔' ordinal='17' />
-            <column datatype='string' name='추천치약' ordinal='18' />
-            <column datatype='integer' name='진단년' ordinal='19' />
-            <column datatype='integer' name='진단월' ordinal='20' />
-            <column datatype='integer' name='진단일' ordinal='21' />
-            <column datatype='integer' name='진단시' ordinal='22' />
-            <column datatype='integer' name='진단요일' ordinal='23' />
-            <column datatype='integer' name='나쁜습관' ordinal='24' />
-            <column datatype='integer' name='바뀔 수 없는 구강구조' ordinal='25' />
-            <column datatype='integer' name='치아 상황' ordinal='26' />
-            <column datatype='integer' name='오전' ordinal='27' />
-            <column datatype='integer' name='오후' ordinal='28' />
-            <column datatype='integer' name='저녁' ordinal='29' />
-            <column datatype='integer' name='밤/새벽' ordinal='30' />
-            <column datatype='real' name='Log_나이' ordinal='31' />
-            <column datatype='string' name='날짜' ordinal='32' />
-            <column datatype='integer' name='group' ordinal='33' />
-            <column datatype='string' name='Age_cut' ordinal='34' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.04yu1d403evo0p1beqfim11doqzw' name='group2.csv' table='[group2#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
-            <column datatype='integer' name='구분' ordinal='0' />
-            <column datatype='integer' name='악궁구조' ordinal='1' />
-            <column datatype='integer' name='나이' ordinal='2' />
-            <column datatype='integer' name='성별' ordinal='3' />
-            <column datatype='integer' name='비뚠니' ordinal='4' />
-            <column datatype='integer' name='1년이내스케일링' ordinal='5' />
-            <column datatype='integer' name='사랑니' ordinal='6' />
-            <column datatype='integer' name='시린니' ordinal='7' />
-            <column datatype='integer' name='구취' ordinal='8' />
-            <column datatype='integer' name='치아흔들림' ordinal='9' />
-            <column datatype='integer' name='흡연' ordinal='10' />
-            <column datatype='integer' name='탄산음료섭취' ordinal='11' />
-            <column datatype='integer' name='잇몸부종,통증' ordinal='12' />
-            <column datatype='integer' name='양치시간(분)' ordinal='13' />
-            <column datatype='integer' name='하루양치질(회)' ordinal='14' />
-            <column datatype='integer' name='전체회차' ordinal='15' />
-            <column datatype='integer' name='진행된회차' ordinal='16' />
-            <column datatype='string' name='추천칫솔' ordinal='17' />
-            <column datatype='string' name='추천치약' ordinal='18' />
-            <column datatype='integer' name='진단년' ordinal='19' />
-            <column datatype='integer' name='진단월' ordinal='20' />
-            <column datatype='integer' name='진단일' ordinal='21' />
-            <column datatype='integer' name='진단시' ordinal='22' />
-            <column datatype='integer' name='진단요일' ordinal='23' />
-            <column datatype='integer' name='나쁜습관' ordinal='24' />
-            <column datatype='integer' name='바뀔 수 없는 구강구조' ordinal='25' />
-            <column datatype='integer' name='치아 상황' ordinal='26' />
-            <column datatype='integer' name='오전' ordinal='27' />
-            <column datatype='integer' name='오후' ordinal='28' />
-            <column datatype='integer' name='저녁' ordinal='29' />
-            <column datatype='integer' name='밤/새벽' ordinal='30' />
-            <column datatype='real' name='Log_나이' ordinal='31' />
-            <column datatype='string' name='날짜' ordinal='32' />
-            <column datatype='integer' name='group' ordinal='33' />
-            <column datatype='string' name='Age_cut' ordinal='34' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>구분</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[구분]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>구분</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>악궁구조</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[악궁구조]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>악궁구조</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>나이</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[나이]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>나이</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>성별</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[성별]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>성별</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>비뚠니</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[비뚠니]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>비뚠니</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>1년이내스케일링</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[1년이내스케일링]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>1년이내스케일링</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>사랑니</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[사랑니]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>사랑니</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>시린니</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[시린니]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>시린니</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>구취</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[구취]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>구취</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>치아흔들림</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[치아흔들림]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>치아흔들림</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>흡연</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[흡연]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>흡연</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>탄산음료섭취</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[탄산음료섭취]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>탄산음료섭취</remote-alias>
-            <ordinal>11</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>잇몸부종,통증</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[잇몸부종,통증]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>잇몸부종,통증</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>양치시간(분)</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[양치시간(분)]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>양치시간(분)</remote-alias>
-            <ordinal>13</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>하루양치질(회)</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[하루양치질(회)]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>하루양치질(회)</remote-alias>
-            <ordinal>14</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>전체회차</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[전체회차]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>전체회차</remote-alias>
-            <ordinal>15</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>진행된회차</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[진행된회차]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>진행된회차</remote-alias>
-            <ordinal>16</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>추천칫솔</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[추천칫솔]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>추천칫솔</remote-alias>
-            <ordinal>17</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LKO_RKR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>추천치약</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[추천치약]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>추천치약</remote-alias>
-            <ordinal>18</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LKO_RKR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>진단년</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[진단년]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>진단년</remote-alias>
-            <ordinal>19</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>진단월</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[진단월]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>진단월</remote-alias>
-            <ordinal>20</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>진단일</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[진단일]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>진단일</remote-alias>
-            <ordinal>21</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>진단시</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[진단시]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>진단시</remote-alias>
-            <ordinal>22</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>진단요일</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[진단요일]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>진단요일</remote-alias>
-            <ordinal>23</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>나쁜습관</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[나쁜습관]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>나쁜습관</remote-alias>
-            <ordinal>24</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>바뀔 수 없는 구강구조</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[바뀔 수 없는 구강구조]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>바뀔 수 없는 구강구조</remote-alias>
-            <ordinal>25</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>치아 상황</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[치아 상황]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>치아 상황</remote-alias>
-            <ordinal>26</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>오전</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[오전]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>오전</remote-alias>
-            <ordinal>27</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>오후</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[오후]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>오후</remote-alias>
-            <ordinal>28</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>저녁</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[저녁]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>저녁</remote-alias>
-            <ordinal>29</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>밤/새벽</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[밤/새벽]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>밤/새벽</remote-alias>
-            <ordinal>30</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Log_나이</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Log_나이]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>Log_나이</remote-alias>
-            <ordinal>31</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>날짜</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[날짜]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>날짜</remote-alias>
-            <ordinal>32</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LKO_RKR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>group</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[group]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>group</remote-alias>
-            <ordinal>33</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Age_cut</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Age_cut]</local-name>
-            <parent-name>[group2.csv]</parent-name>
-            <remote-alias>Age_cut</remote-alias>
-            <ordinal>34</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LKO_RKR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
-      <column caption='Log 나이' datatype='real' name='[Log_나이]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='group2.csv' datatype='table' name='[__tableau_internal_object_id__].[group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1]' role='measure' type='quantitative' />
-      <column caption='Group' datatype='integer' name='[group]' role='measure' type='quantitative' />
-      <column aggregation='Sum' datatype='integer' name='[나쁜습관]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
-        <aliases>
-          <alias key='0' value='남자' />
-          <alias key='1' value='여자' />
-        </aliases>
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[양치시간(분)]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' name='[치아 상황]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' caption='하루양치질(회)(복사본)' datatype='integer' name='[하루양치질(회)(복사본)_1350798446974652416]' role='dimension' type='ordinal'>
-        <calculation class='tableau' formula='[하루양치질(회)]' />
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal' />
-      <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:성별:ok]' type='palette'>
-            <map to='#034aa6'>
-              <bucket>1</bucket>
-            </map>
-            <map to='#91b0d9'>
-              <bucket>0</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='group2.csv' id='group2.csv_D7E71D9813F04FBCBF29A115ED04FFF1'>
-            <properties context=''>
-              <relation connection='textscan.04yu1d403evo0p1beqfim11doqzw' name='group2.csv' table='[group2#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
-                  <column datatype='integer' name='구분' ordinal='0' />
-                  <column datatype='integer' name='악궁구조' ordinal='1' />
-                  <column datatype='integer' name='나이' ordinal='2' />
-                  <column datatype='integer' name='성별' ordinal='3' />
-                  <column datatype='integer' name='비뚠니' ordinal='4' />
-                  <column datatype='integer' name='1년이내스케일링' ordinal='5' />
-                  <column datatype='integer' name='사랑니' ordinal='6' />
-                  <column datatype='integer' name='시린니' ordinal='7' />
-                  <column datatype='integer' name='구취' ordinal='8' />
-                  <column datatype='integer' name='치아흔들림' ordinal='9' />
-                  <column datatype='integer' name='흡연' ordinal='10' />
-                  <column datatype='integer' name='탄산음료섭취' ordinal='11' />
-                  <column datatype='integer' name='잇몸부종,통증' ordinal='12' />
-                  <column datatype='integer' name='양치시간(분)' ordinal='13' />
-                  <column datatype='integer' name='하루양치질(회)' ordinal='14' />
-                  <column datatype='integer' name='전체회차' ordinal='15' />
-                  <column datatype='integer' name='진행된회차' ordinal='16' />
-                  <column datatype='string' name='추천칫솔' ordinal='17' />
-                  <column datatype='string' name='추천치약' ordinal='18' />
-                  <column datatype='integer' name='진단년' ordinal='19' />
-                  <column datatype='integer' name='진단월' ordinal='20' />
-                  <column datatype='integer' name='진단일' ordinal='21' />
-                  <column datatype='integer' name='진단시' ordinal='22' />
-                  <column datatype='integer' name='진단요일' ordinal='23' />
-                  <column datatype='integer' name='나쁜습관' ordinal='24' />
-                  <column datatype='integer' name='바뀔 수 없는 구강구조' ordinal='25' />
-                  <column datatype='integer' name='치아 상황' ordinal='26' />
-                  <column datatype='integer' name='오전' ordinal='27' />
-                  <column datatype='integer' name='오후' ordinal='28' />
-                  <column datatype='integer' name='저녁' ordinal='29' />
-                  <column datatype='integer' name='밤/새벽' ordinal='30' />
-                  <column datatype='real' name='Log_나이' ordinal='31' />
-                  <column datatype='string' name='날짜' ordinal='32' />
-                  <column datatype='integer' name='group' ordinal='33' />
-                  <column datatype='string' name='Age_cut' ordinal='34' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='group1.csv(다중 연결)' inline='true' name='federated.01alxue1lc348611g5ccv0xkqehi' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1226,9 +606,19 @@
       <column datatype='integer' name='[진행된회차]' role='measure' type='quantitative' />
       <column aggregation='Sum' datatype='integer' name='[치아 상황]' role='dimension' type='ordinal' />
       <column datatype='integer' name='[치아흔들림]' role='measure' type='quantitative' />
-      <column datatype='integer' name='[탄산음료섭취]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='섭취안함' />
+          <alias key='1' value='섭취함' />
+        </aliases>
+      </column>
       <column aggregation='Sum' datatype='integer' name='[하루양치질(회)]' role='dimension' type='ordinal' />
-      <column datatype='integer' name='[흡연]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='비흡연자' />
+          <alias key='1' value='흡연자' />
+        </aliases>
+      </column>
       <column-instance column='[__tableau_internal_object_id__].[group1.csv_4700E17B80C34B34A6B4F6674111D12F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:group1.csv_4700E17B80C34B34A6B4F6674111D12F:qk]' pivot='key' type='quantitative' />
       <column-instance column='[흡연]' derivation='Avg' name='[avg:흡연:qk]' pivot='key' type='quantitative' />
       <column-instance column='[나쁜습관]' derivation='Count' name='[cnt:나쁜습관:qk]' pivot='key' type='quantitative' />
@@ -1281,6 +671,13 @@
           <groupfilter function='level-members' level='[Age_cut]' />
           <groupfilter function='level-members' level='[성별]' />
           <groupfilter function='level-members' level='[치아 상황]' />
+        </groupfilter>
+      </group>
+      <group caption='동작(Age cut,성별,탄산음료섭취)' hidden='true' name='[Action (Age cut,성별,탄산음료섭취)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Age_cut]' />
+          <groupfilter function='level-members' level='[성별]' />
+          <groupfilter function='level-members' level='[탄산음료섭취]' />
         </groupfilter>
       </group>
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
@@ -1979,20 +1376,20 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='나쁜습관'>
+    <worksheet name='그룹1-나쁜습관'>
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontname='Pretendard Medium'>&lt;나쁜습관별, 연령별 남여비율&gt;</run>
+            <run fontalignment='1' fontname='Pretendard'>&lt;나쁜습관별, 연령별 남여 비율&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='group2' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' />
+            <datasource caption='group1.csv(다중 연결)' name='federated.01alxue1lc348611g5ccv0xkqehi' />
           </datasources>
-          <datasource-dependencies datasource='federated.1ymw0l90o7ddx610m68kf0pzk2ji'>
+          <datasource-dependencies datasource='federated.01alxue1lc348611g5ccv0xkqehi'>
             <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
             <column-instance column='[나쁜습관]' derivation='Count' name='[cnt:나쁜습관:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
@@ -2006,60 +1403,106 @@
               </aliases>
             </column>
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:나쁜습관:qk]' scope='rows' value='false' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='display' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:나쁜습관:qk]' scope='rows' value='false' />
           </style-rule>
-          <style-rule element='label'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='gridline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Bar' />
             <encodings>
-              <color column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' />
-              <text column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:나쁜습관:qk]' />
+              <color column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' />
+              <text column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:나쁜습관:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age cut:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>성별:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>양치시간 </run>
+                <run bold='true'>분</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>카운트:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:나쁜습관:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:나쁜습관:qk]</rows>
-        <cols>([federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:나쁜습관:ok] / [federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk])</cols>
+        <rows>[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:나쁜습관:qk]</rows>
+        <cols>([federated.01alxue1lc348611g5ccv0xkqehi].[none:나쁜습관:ok] / [federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{79742362-3DAA-406A-88EE-C730B9566C74}' />
+      <simple-id uuid='{E7B1AA94-B2E6-4C12-8BA6-D8F1E33065BD}' />
     </worksheet>
-    <worksheet name='양치시간'>
+    <worksheet name='그룹1-양치시간'>
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontname='Pretendard Medium'>&lt;양치시간별, 연령별 남여비율&gt;</run>
+            <run fontalignment='1' fontname='Pretendard'>&lt;양치시간별, 연령별 남여 비율&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='group2' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' />
+            <datasource caption='group1.csv(다중 연결)' name='federated.01alxue1lc348611g5ccv0xkqehi' />
           </datasources>
-          <datasource-dependencies datasource='federated.1ymw0l90o7ddx610m68kf0pzk2ji'>
+          <datasource-dependencies datasource='federated.01alxue1lc348611g5ccv0xkqehi'>
             <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
             <column-instance column='[양치시간(분)]' derivation='Count' name='[cnt:양치시간(분):qk]' pivot='key' type='quantitative' />
             <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
@@ -2073,125 +1516,153 @@
             </column>
             <column aggregation='Sum' datatype='integer' name='[양치시간(분)]' role='dimension' type='ordinal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:양치시간(분):qk]' scope='rows' value='false' />
-            <format attr='tick-color' scope='cols' value='#00000000' />
-            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='display' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:양치시간(분):qk]' scope='rows' value='false' />
             <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
           </style-rule>
-          <style-rule element='cell'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:양치시간(분):qk]' value='Pretendard Medium' />
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
-          </style-rule>
-          <style-rule element='label'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard' />
           </style-rule>
           <style-rule element='dropline'>
-            <format attr='stroke-size' scope='cols' value='0' />
-            <format attr='line-visibility' scope='cols' value='off' />
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
-          </style-rule>
-          <style-rule element='refline'>
             <format attr='stroke-size' scope='cols' value='0' />
             <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='gridline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='zeroline'>
-            <format attr='stroke-size' scope='cols' value='0' />
-            <format attr='line-visibility' scope='cols' value='off' />
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
-          </style-rule>
-          <style-rule element='legend'>
-            <format attr='font-family' value='Pretendard Medium' />
-          </style-rule>
-          <style-rule element='legend-title'>
-            <format attr='font-family' value='Pretendard Medium' />
-          </style-rule>
-          <style-rule element='legend-title-text'>
-            <format attr='color' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' value='성별' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Bar' />
             <encodings>
-              <color column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' />
-              <text column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:양치시간(분):qk]' />
+              <color column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' />
+              <text column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:양치시간(분):qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age cut:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>성별:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>양치시간 </run>
+                <run bold='true'>분</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>카운트:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:양치시간(분):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:양치시간(분):qk]</rows>
-        <cols>([federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:양치시간(분):ok] / [federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk])</cols>
+        <rows>[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:양치시간(분):qk]</rows>
+        <cols>([federated.01alxue1lc348611g5ccv0xkqehi].[none:양치시간(분):ok] / [federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{4D5ADF9B-E6C4-4D43-ADA0-F7583FCDB118}' />
+      <simple-id uuid='{BE31947C-F835-479B-B578-E0610285092E}' />
     </worksheet>
-    <worksheet name='양치횟수'>
+    <worksheet name='그룹1-양치횟수'>
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontname='Pretendard Medium'>&lt;하루양치횟수, 연령별 남여비율&gt;</run>
+            <run fontalignment='1' fontname='Pretendard'>&lt;하루양치횟수, 연령별 남여 비율&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='group2' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' />
+            <datasource caption='group1.csv(다중 연결)' name='federated.01alxue1lc348611g5ccv0xkqehi' />
           </datasources>
-          <datasource-dependencies datasource='federated.1ymw0l90o7ddx610m68kf0pzk2ji'>
+          <datasource-dependencies datasource='federated.01alxue1lc348611g5ccv0xkqehi'>
             <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
-            <column-instance column='[하루양치질(회)(복사본)_1350798446974652416]' derivation='Count' name='[cnt:하루양치질(회)(복사본)_1350798446974652416:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[양치시간(분)]' derivation='Count' name='[cnt:양치시간(분):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[하루양치질(회)]' derivation='Count' name='[cnt:하루양치질(회):qk]' pivot='key' type='quantitative' />
             <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
             <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
-            <column-instance column='[하루양치질(회)(복사본)_1350798446974652416]' derivation='None' name='[none:하루양치질(회)(복사본)_1350798446974652416:ok]' pivot='key' type='ordinal' />
-            <column-instance column='[하루양치질(회)]' derivation='Sum' name='[sum:하루양치질(회):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[하루양치질(회)]' derivation='None' name='[none:하루양치질(회):ok]' pivot='key' type='ordinal' />
             <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
               <aliases>
                 <alias key='0' value='남자' />
                 <alias key='1' value='여자' />
               </aliases>
             </column>
-            <column aggregation='Sum' caption='하루양치질(회)(복사본)' datatype='integer' name='[하루양치질(회)(복사본)_1350798446974652416]' role='dimension' type='ordinal'>
-              <calculation class='tableau' formula='[하루양치질(회)]' />
-            </column>
-            <column datatype='integer' name='[하루양치질(회)]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[양치시간(분)]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[하루양치질(회)]' role='dimension' type='ordinal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[sum:하루양치질(회):qk]' scope='rows' value='false' />
             <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='display' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:하루양치질(회):qk]' scope='rows' value='false' />
           </style-rule>
-          <style-rule element='label'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard' />
           </style-rule>
           <style-rule element='dropline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
           <style-rule element='refline'>
             <format attr='stroke-size' scope='rows' value='0' />
@@ -2204,45 +1675,63 @@
           <style-rule element='zeroline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Bar' />
             <encodings>
-              <color column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' />
-              <text column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:하루양치질(회)(복사본)_1350798446974652416:qk]' />
+              <color column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' />
+              <text column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:하루양치질(회):qk]' />
+              <lod column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:양치시간(분):qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age cut:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>성별:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>양치시간 </run>
+                <run bold='true'>분</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>카운트:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:하루양치질(회):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[sum:하루양치질(회):qk]</rows>
-        <cols>([federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:하루양치질(회)(복사본)_1350798446974652416:ok] / [federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk])</cols>
+        <rows>[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:하루양치질(회):qk]</rows>
+        <cols>([federated.01alxue1lc348611g5ccv0xkqehi].[none:하루양치질(회):ok] / [federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{86EF490C-8B98-4A83-BF4E-6E9C0685286B}' />
+      <simple-id uuid='{8D9974FE-08B0-4ECC-AF97-33A9B6A4C2DD}' />
     </worksheet>
-    <worksheet name='치아상황'>
+    <worksheet name='그룹1-치아상황'>
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontname='Pretendard Medium'>&lt;치아상황별, 연령별 남여비율&gt;</run>
+            <run fontalignment='1' fontname='Pretendard'>&lt;치아상황별, 연령별 남여 비율&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='group2' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' />
+            <datasource caption='group1.csv(다중 연결)' name='federated.01alxue1lc348611g5ccv0xkqehi' />
           </datasources>
-          <datasource-dependencies datasource='federated.1ymw0l90o7ddx610m68kf0pzk2ji'>
+          <datasource-dependencies datasource='federated.01alxue1lc348611g5ccv0xkqehi'>
             <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
             <column-instance column='[치아 상황]' derivation='Count' name='[cnt:치아 상황:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
@@ -2256,22 +1745,39 @@
             </column>
             <column aggregation='Sum' datatype='integer' name='[치아 상황]' role='dimension' type='ordinal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:치아 상황:qk]' scope='rows' value='false' />
             <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='display' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:치아 상황:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:치아 상황:qk]' field-type='quantitative' max='831' min='-18' range-type='fixed' scope='rows' type='space' />
           </style-rule>
-          <style-rule element='label'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard' />
           </style-rule>
           <style-rule element='dropline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
           <style-rule element='refline'>
             <format attr='stroke-size' scope='rows' value='0' />
@@ -2284,45 +1790,62 @@
           <style-rule element='zeroline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Bar' />
             <encodings>
-              <color column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' />
-              <text column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:치아 상황:qk]' />
+              <color column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' />
+              <text column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:치아 상황:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age cut:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>성별:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>양치시간 </run>
+                <run bold='true'>분</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>카운트:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:치아 상황:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:치아 상황:qk]</rows>
-        <cols>([federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:치아 상황:ok] / [federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk])</cols>
+        <rows>[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:치아 상황:qk]</rows>
+        <cols>([federated.01alxue1lc348611g5ccv0xkqehi].[none:치아 상황:ok] / [federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{62942C46-5F20-4E21-BA36-7181025EAA3A}' />
+      <simple-id uuid='{1D0C70B3-483A-4772-9D06-F42F7E86944C}' />
     </worksheet>
-    <worksheet name='탄산음료'>
+    <worksheet name='그룹1-탄산'>
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontname='Pretendard Medium'>&lt;탄산음료&gt;</run>
+            <run fontalignment='1' fontname='Pretendard'>&lt;탄산음료&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='group2' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' />
+            <datasource caption='group1.csv(다중 연결)' name='federated.01alxue1lc348611g5ccv0xkqehi' />
           </datasources>
-          <datasource-dependencies datasource='federated.1ymw0l90o7ddx610m68kf0pzk2ji'>
+          <datasource-dependencies datasource='federated.01alxue1lc348611g5ccv0xkqehi'>
             <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
             <column-instance column='[탄산음료섭취]' derivation='Count' name='[cnt:탄산음료섭취:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
@@ -2334,62 +1857,99 @@
                 <alias key='1' value='여자' />
               </aliases>
             </column>
-            <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='섭취안함' />
+                <alias key='1' value='섭취함' />
+              </aliases>
+            </column>
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:탄산음료섭취:qk]' scope='rows' value='false' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='title' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:탄산음료섭취:qk]' scope='rows' value='탄산음료섭취' />
+            <format attr='display' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:탄산음료섭취:qk]' scope='rows' value='false' />
           </style-rule>
-          <style-rule element='label'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='gridline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' />
-              <text column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:탄산음료섭취:qk]' />
+              <color column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' />
+              <text column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:탄산음료섭취:qk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:탄산음료섭취:qk]</rows>
-        <cols>([federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:탄산음료섭취:ok] / [federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk])</cols>
+        <rows>[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:탄산음료섭취:qk]</rows>
+        <cols>([federated.01alxue1lc348611g5ccv0xkqehi].[none:탄산음료섭취:ok] / [federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{71EC87DA-3CFA-4275-842E-5E441C4EF0F7}' />
+      <simple-id uuid='{E31CCCDB-DE58-420E-8B2E-E52A0B5C7987}' />
     </worksheet>
-    <worksheet name='흡연'>
+    <worksheet name='그룹1-흡연'>
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontname='Pretendard Medium'>&lt;흡연&gt;</run>
+            <run fontalignment='1' fontname='Pretendard'>&lt;흡연&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='group2' name='federated.1ymw0l90o7ddx610m68kf0pzk2ji' />
+            <datasource caption='group1.csv(다중 연결)' name='federated.01alxue1lc348611g5ccv0xkqehi' />
           </datasources>
-          <datasource-dependencies datasource='federated.1ymw0l90o7ddx610m68kf0pzk2ji'>
+          <datasource-dependencies datasource='federated.01alxue1lc348611g5ccv0xkqehi'>
             <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
             <column-instance column='[흡연]' derivation='Count' name='[cnt:흡연:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
@@ -2401,35 +1961,72 @@
                 <alias key='1' value='여자' />
               </aliases>
             </column>
-            <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='비흡연자' />
+                <alias key='1' value='흡연자' />
+              </aliases>
+            </column>
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='display' class='0' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:흡연:qk]' scope='rows' value='false' />
-            <format attr='height' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='61' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='title' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:흡연:qk]' scope='rows' value='흡연' />
+            <encoding attr='space' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:흡연:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1000' minor-origin='0' minor-show='false' minor-spacing='100' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:흡연:qk]' scope='rows' value='false' />
           </style-rule>
-          <style-rule element='label'>
-            <format attr='font-family' field='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk]' value='Pretendard Medium' />
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='gridline'>
             <format attr='stroke-size' scope='rows' value='0' />
             <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' />
-              <text column='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:흡연:qk]' />
+              <color column='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' />
+              <text column='[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:흡연:qk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
@@ -2439,10 +2036,10 @@
             </style>
           </pane>
         </panes>
-        <rows>[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[cnt:흡연:qk]</rows>
-        <cols>([federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:흡연:ok] / [federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:Age_cut:nk])</cols>
+        <rows>[federated.01alxue1lc348611g5ccv0xkqehi].[cnt:흡연:qk]</rows>
+        <cols>([federated.01alxue1lc348611g5ccv0xkqehi].[none:흡연:ok] / [federated.01alxue1lc348611g5ccv0xkqehi].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{75ECE5C5-B084-41ED-8489-C98AE1DADCB8}' />
+      <simple-id uuid='{F986B801-0AE6-47BC-8695-B6FD3BBC40EE}' />
     </worksheet>
   </worksheets>
   <dashboards>
@@ -2451,65 +2048,29 @@
       <size maxheight='900' maxwidth='2000' minheight='900' minwidth='2000' sizing-mode='fixed' />
       <zones>
         <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='87444' id='51' param='horz' type-v2='layout-flow' w='99200' x='400' y='11667'>
-            <zone h='87444' id='38' param='horz' type-v2='layout-flow' w='95150' x='400' y='11667'>
-              <zone h='87444' id='33' type-v2='layout-basic' w='95150' x='400' y='11667'>
-                <zone h='87444' id='13' param='horz' type-v2='layout-flow' w='25928' x='69622' y='11667'>
-                  <zone h='87444' id='11' type-v2='layout-basic' w='25928' x='69622' y='11667'>
-                    <zone h='43721' id='56' name='흡연' w='25928' x='69622' y='11667'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='43723' id='57' name='탄산음료' w='25928' x='69622' y='55388'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
+          <zone h='98222' id='52' param='horz' type-v2='layout-flow' w='99200' x='400' y='889'>
+            <zone h='98222' id='33' type-v2='layout-basic' w='99200' x='400' y='889'>
+              <zone h='87555' id='13' param='horz' type-v2='layout-flow' w='26400' x='69450' y='11556'>
+                <zone h='87555' id='11' type-v2='layout-basic' w='26400' x='69450' y='11556'>
+                  <zone h='42603' id='9' name='그룹1-흡연' w='26400' x='69450' y='11556'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='44952' id='36' name='그룹1-탄산' w='26400' x='69450' y='54159'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
                   </zone>
                 </zone>
-                <zone h='43723' id='49' name='양치시간' w='28005' x='400' y='11667'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='43721' id='53' name='양치횟수' w='28007' x='400' y='55390'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='43723' id='54' name='치아상황' w='41217' x='28405' y='11667'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='43721' id='55' name='나쁜습관' w='41215' x='28407' y='55390'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
               </zone>
-            </zone>
-            <zone fixed-size='81' h='87444' id='50' is-fixed='true' param='vert' type-v2='layout-flow' w='4050' x='95550' y='11667'>
-              <zone fixed-size='68' h='8445' id='52' is-fixed='true' name='양치시간' pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type-v2='color' w='4050' x='95550' y='11667'>
+              <zone h='42997' id='15' name='그룹1-양치시간' w='29194' x='400' y='11556'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2517,15 +2078,49 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
+              <zone h='44558' id='16' name='그룹1-양치횟수' w='29196' x='400' y='54553'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42997' id='17' name='그룹1-치아상황' w='39856' x='29594' y='11556'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44558' id='18' name='그룹1-나쁜습관' w='39854' x='29596' y='54553'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10667' id='19' is-centered='0' param='C:/Users/User/Downloads/제목을 입력해주세요_-001.png' type-v2='bitmap' w='99200' x='400' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='160' h='87555' id='51' is-fixed='true' param='vert' type-v2='layout-flow' w='3750' x='95850' y='11556'>
+                <zone h='7445' id='53' name='그룹1-흡연' pane-specification-id='2' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type-v2='color' w='3750' x='95850' y='11556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
             </zone>
-          </zone>
-          <zone h='10778' id='58' is-centered='0' param='C:/Users/User/Downloads/제목을 입력해주세요_/002.png' type-v2='bitmap' w='99200' x='400' y='889'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
           </zone>
           <zone-style>
             <format attr='border-color' value='#000000' />
@@ -2539,9 +2134,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='72' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='71' param='vert' type-v2='layout-flow' w='99200' x='400' y='889'>
-                <zone fixed-size='89' h='10778' id='58' is-centered='0' is-fixed='true' param='C:/Users/User/Downloads/제목을 입력해주세요_/002.png' type-v2='bitmap' w='99200' x='400' y='889'>
+            <zone h='100000' id='63' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='62' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='88' h='10667' id='19' is-centered='0' is-fixed='true' param='C:/Users/User/Downloads/제목을 입력해주세요_-001.png' type-v2='bitmap' w='99200' x='400' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2550,7 +2145,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43723' id='49' is-fixed='true' name='양치시간' w='28005' x='400' y='11667'>
+                <zone fixed-size='280' h='42997' id='15' is-fixed='true' name='그룹1-양치시간' w='29194' x='400' y='11556'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2559,7 +2154,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='68' h='8445' id='52' name='양치시간' pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type-v2='color' w='4050' x='95550' y='11667'>
+                <zone fixed-size='280' h='42997' id='17' is-fixed='true' name='그룹1-치아상황' w='39856' x='29594' y='11556'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2568,7 +2163,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43723' id='54' is-fixed='true' name='치아상황' w='41217' x='28405' y='11667'>
+                <zone fixed-size='280' h='42603' id='9' is-fixed='true' name='그룹1-흡연' w='26400' x='69450' y='11556'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2577,7 +2172,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43721' id='56' is-fixed='true' name='흡연' w='25928' x='69622' y='11667'>
+                <zone h='7445' id='53' name='그룹1-흡연' pane-specification-id='2' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type-v2='color' w='3750' x='95850' y='11556'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2586,7 +2181,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43723' id='57' is-fixed='true' name='탄산음료' w='25928' x='69622' y='55388'>
+                <zone fixed-size='280' h='44952' id='36' is-fixed='true' name='그룹1-탄산' w='26400' x='69450' y='54159'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2595,7 +2190,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43721' id='53' is-fixed='true' name='양치횟수' w='28007' x='400' y='55390'>
+                <zone fixed-size='280' h='44558' id='16' is-fixed='true' name='그룹1-양치횟수' w='29196' x='400' y='54553'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2604,7 +2199,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43721' id='55' is-fixed='true' name='나쁜습관' w='41215' x='28407' y='55390'>
+                <zone fixed-size='280' h='44558' id='18' is-fixed='true' name='그룹1-나쁜습관' w='39854' x='29596' y='54553'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2624,11 +2219,11 @@
           </zones>
         </devicelayout>
       </devicelayouts>
-      <simple-id uuid='{79C4AE18-B4B4-47F8-9418-7606E636915D}' />
+      <simple-id uuid='{D1F5568A-AAE4-4A53-B91C-C2688B67FC99}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.25' source-height='63'>
-    <window class='worksheet' name='양치시간'>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='그룹1-양치시간'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2644,50 +2239,22 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='29'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{BB93D5DE-2A49-4D93-A103-9A2451151875}' />
-    </window>
-    <window class='worksheet' maximized='true' name='양치횟수'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='28'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type='color' />
+            <card pane-specification-id='3' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type='color' />
           </strip>
         </edge>
       </cards>
       <viewpoint>
-        <zoom type='fit-width' />
+        <zoom type='entire-view' />
       </viewpoint>
-      <simple-id uuid='{CFD5CDEB-804C-460D-9DEB-480D6EACFAF3}' />
+      <simple-id uuid='{F1A28116-048A-436F-AD12-156B3C9FCCD6}' />
     </window>
-    <window class='worksheet' name='치아상황'>
+    <window class='worksheet' name='그룹1-양치횟수'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2703,22 +2270,22 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type='color' />
+            <card pane-specification-id='3' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type='color' />
           </strip>
         </edge>
       </cards>
       <viewpoint>
-        <zoom type='fit-width' />
+        <zoom type='entire-view' />
       </viewpoint>
-      <simple-id uuid='{0FD73F4C-4B02-43AE-8CCC-9A5C3DFEDD96}' />
+      <simple-id uuid='{5A6C561A-F51E-4231-A9BD-5BDB7FCD8EFF}' />
     </window>
-    <window class='worksheet' name='나쁜습관'>
+    <window class='worksheet' name='그룹1-치아상황'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2734,19 +2301,22 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type='color' />
+            <card pane-specification-id='4' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{2C8D11AA-262C-4ADF-AF3F-563E283A6B08}' />
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7DCCDF79-5B73-4102-AD27-EC63A3727F38}' />
     </window>
-    <window class='worksheet' name='흡연'>
+    <window class='worksheet' name='그룹1-나쁜습관'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2762,19 +2332,22 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type='color' />
+            <card pane-specification-id='5' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{50EC532E-89CC-439F-9515-270057F0F017}' />
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1550C8E9-9FFD-4013-9270-A9FE01EBD685}' />
     </window>
-    <window class='worksheet' name='탄산음료'>
+    <window class='worksheet' name='그룹1-흡연'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2790,41 +2363,75 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1ymw0l90o7ddx610m68kf0pzk2ji].[none:성별:ok]' type='color' />
+            <card pane-specification-id='2' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{84001FD7-7C99-40DE-8F8D-30F2F0906277}' />
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A5D6ABAD-D27E-4CB2-B3E1-E95835420B14}' />
+    </window>
+    <window class='worksheet' name='그룹1-탄산'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.01alxue1lc348611g5ccv0xkqehi].[none:성별:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{998BEB2F-BC54-4A5D-BF44-AFD1068BF9A9}' />
     </window>
     <window class='dashboard' name='대시보드 1'>
       <viewpoints>
-        <viewpoint name='나쁜습관'>
+        <viewpoint name='그룹1-나쁜습관'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='양치시간'>
+        <viewpoint name='그룹1-양치시간'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='양치횟수'>
+        <viewpoint name='그룹1-양치횟수'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='치아상황'>
+        <viewpoint name='그룹1-치아상황'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='탄산음료'>
+        <viewpoint name='그룹1-탄산'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='흡연'>
+        <viewpoint name='그룹1-흡연'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
       <active id='-1' />
-      <simple-id uuid='{93332D85-1068-4B29-8A6C-E4FC3A896B0D}' />
+      <simple-id uuid='{09B13FCE-FF96-42A8-A1A8-D27EF5D6E08A}' />
     </window>
   </windows>
 </workbook>

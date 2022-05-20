@@ -569,6 +569,12 @@
       <column caption='Log 나이' datatype='real' name='[Log_나이]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='group3.csv' datatype='table' name='[__tableau_internal_object_id__].[group3.csv_DF5AE71BDDEB49259611E95B4CAF67AA]' role='measure' type='quantitative' />
       <column caption='Group' datatype='integer' name='[group]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[구취]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='없음' />
+          <alias key='1' value='있음' />
+        </aliases>
+      </column>
       <column aggregation='Sum' datatype='integer' name='[나쁜습관]' role='dimension' type='ordinal' />
       <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
         <aliases>
@@ -576,11 +582,39 @@
           <alias key='1' value='여자' />
         </aliases>
       </column>
+      <column aggregation='Sum' datatype='integer' name='[시린니]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='없음' />
+          <alias key='1' value='있음' />
+        </aliases>
+      </column>
       <column aggregation='Sum' datatype='integer' name='[양치시간(분)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[잇몸부종,통증]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='없음' />
+          <alias key='1' value='있음' />
+        </aliases>
+      </column>
       <column aggregation='Sum' datatype='integer' name='[치아 상황]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[치아흔들림]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='없음' />
+          <alias key='1' value='있음' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='섭취안함' />
+          <alias key='1' value='섭취함' />
+        </aliases>
+      </column>
       <column aggregation='Sum' datatype='integer' name='[하루양치질(회)]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='비흡연자' />
+          <alias key='1' value='흡연자' />
+        </aliases>
+      </column>
       <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
         <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='C:/Users/User/Desktop/새 폴더/group3.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/13/2022 04:41:27 AM' username='tableau_internal_user'>
@@ -1189,6 +1223,89 @@
     </datasource>
   </datasources>
   <worksheets>
+    <worksheet name='구취'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Pretendard Medium'>&lt; 구취 &gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='group3' name='federated.1bi9dt00sopmrg14dhqel1ldpsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bi9dt00sopmrg14dhqel1ldpsl5'>
+            <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
+            <column-instance column='[구취]' derivation='Count' name='[cnt:구취:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[구취]' derivation='None' name='[none:구취:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[구취]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='없음' />
+                <alias key='1' value='있음' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='남자' />
+                <alias key='1' value='여자' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:구취:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard Medium' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' />
+              <text column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:구취:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:구취:qk]</rows>
+        <cols>([federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:구취:ok] / [federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk])</cols>
+      </table>
+      <simple-id uuid='{86075EB1-1D13-437B-8BB6-D8E7B7ECE1E4}' />
+    </worksheet>
     <worksheet name='나쁜습관'>
       <layout-options>
         <title>
@@ -1216,6 +1333,18 @@
               </aliases>
             </column>
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -1254,25 +1383,84 @@
       </table>
       <simple-id uuid='{1F98BA7C-DCA7-4E0E-B192-1644A741CF45}' />
     </worksheet>
-    <worksheet name='시트 7'>
+    <worksheet name='시린니'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Pretendard Medium'>&lt; 시린니 &gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='group3' name='federated.1bi9dt00sopmrg14dhqel1ldpsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bi9dt00sopmrg14dhqel1ldpsl5'>
+            <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
+            <column-instance column='[시린니]' derivation='Count' name='[cnt:시린니:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[시린니]' derivation='None' name='[none:시린니:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='남자' />
+                <alias key='1' value='여자' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[시린니]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='없음' />
+                <alias key='1' value='있음' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard Medium' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' />
+              <text column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:시린니:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows />
-        <cols />
+        <rows>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:시린니:qk]</rows>
+        <cols>([federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:시린니:ok] / [federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk])</cols>
       </table>
-      <simple-id uuid='{BDD60072-F39C-4DAB-BF06-A2CA8D6F49D8}' />
+      <simple-id uuid='{862CFE74-82C5-4324-9572-A877F8762F07}' />
     </worksheet>
     <worksheet name='양치시간'>
       <layout-options>
@@ -1378,6 +1566,18 @@
             </column>
             <column aggregation='Sum' datatype='integer' name='[하루양치질(회)]' role='dimension' type='ordinal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -1416,6 +1616,85 @@
       </table>
       <simple-id uuid='{A539698F-3357-48F9-BDDA-293A699B0A17}' />
     </worksheet>
+    <worksheet name='잇몸부종'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Pretendard Medium'>&lt; 잇몸부종 &gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='group3' name='federated.1bi9dt00sopmrg14dhqel1ldpsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bi9dt00sopmrg14dhqel1ldpsl5'>
+            <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
+            <column-instance column='[잇몸부종,통증]' derivation='Count' name='[cnt:잇몸부종,통증:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[잇몸부종,통증]' derivation='None' name='[none:잇몸부종,통증:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='남자' />
+                <alias key='1' value='여자' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[잇몸부종,통증]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='없음' />
+                <alias key='1' value='있음' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard Medium' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' />
+              <text column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:잇몸부종,통증:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:잇몸부종,통증:qk]</rows>
+        <cols>([federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:잇몸부종,통증:ok] / [federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk])</cols>
+      </table>
+      <simple-id uuid='{88C6BE8B-B1E7-429E-8EBC-D822F9CC41A9}' />
+    </worksheet>
     <worksheet name='치아상황'>
       <layout-options>
         <title>
@@ -1443,6 +1722,18 @@
             </column>
             <column aggregation='Sum' datatype='integer' name='[치아 상황]' role='dimension' type='ordinal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -1481,6 +1772,88 @@
       </table>
       <simple-id uuid='{4DE1BAEF-4107-45D8-AA2E-D12FF69F7AB8}' />
     </worksheet>
+    <worksheet name='치아흔들림'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Pretendard Medium'>&lt; 치아흔들림 &gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='group3' name='federated.1bi9dt00sopmrg14dhqel1ldpsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bi9dt00sopmrg14dhqel1ldpsl5'>
+            <column caption='Age cut' datatype='string' name='[Age_cut]' role='dimension' type='nominal' />
+            <column-instance column='[치아흔들림]' derivation='Count' name='[cnt:치아흔들림:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age_cut]' derivation='None' name='[none:Age_cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[성별]' derivation='None' name='[none:성별:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[치아흔들림]' derivation='None' name='[none:치아흔들림:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[성별]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='남자' />
+                <alias key='1' value='여자' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[치아흔들림]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='없음' />
+                <alias key='1' value='있음' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:치아흔들림:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Pretendard Medium' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' />
+              <text column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:치아흔들림:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[cnt:치아흔들림:qk]</rows>
+        <cols>([federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:치아흔들림:ok] / [federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk])</cols>
+      </table>
+      <simple-id uuid='{9399AFB4-1C12-49F9-B2B2-371C8068CF6E}' />
+    </worksheet>
     <worksheet name='탄산음료'>
       <layout-options>
         <title>
@@ -1506,8 +1879,25 @@
                 <alias key='1' value='여자' />
               </aliases>
             </column>
-            <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[탄산음료섭취]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='섭취안함' />
+                <alias key='1' value='섭취함' />
+              </aliases>
+            </column>
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -1571,8 +1961,25 @@
                 <alias key='1' value='여자' />
               </aliases>
             </column>
-            <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[흡연]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='비흡연자' />
+                <alias key='1' value='흡연자' />
+              </aliases>
+            </column>
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age_cut:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;50-59&quot;' />
+                <groupfilter function='member' level='[none:Age_cut:nk]' member='&quot;60-69&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:Age_cut:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -1700,8 +2107,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='22' param='vert' type-v2='layout-flow' w='99200' x='400' y='889'>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='24' param='vert' type-v2='layout-flow' w='99200' x='400' y='889'>
                 <zone fixed-size='96' h='11555' id='15' is-centered='0' is-fixed='true' param='C:/Users/User/Downloads/제목을 입력해주세요_/003.png' type-v2='bitmap' w='99200' x='400' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1786,6 +2193,78 @@
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{152581E7-729D-4B17-A944-C409BAEBF8D6}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='대시보드 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='13' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='11' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='49000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='492' h='49000' id='5' is-fixed='true' type-v2='layout-basic' w='49200' x='800' y='1000'>
+                  <zone h='49000' id='3' name='구취' w='49200' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='49000' id='9' name='치아흔들림' w='49193' x='50000' y='1000'>
+                  <layout-cache cell-count-w='11' non-cell-size-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='49000' id='10' name='시린니' w='49200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='15' name='잇몸부종' w='49200' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{07003F6C-0479-49C9-BB2F-FACCC333B181}' />
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.25' source-height='37'>
@@ -1960,7 +2439,7 @@
       </cards>
       <simple-id uuid='{7FB4EF4B-9EEA-4FE9-9D6E-040F2C4D234C}' />
     </window>
-    <window class='dashboard' maximized='true' name='대시보드 1'>
+    <window class='dashboard' name='대시보드 1'>
       <viewpoints>
         <viewpoint name='나쁜습관'>
           <zoom type='entire-view' />
@@ -1981,10 +2460,10 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='10' />
+      <active id='15' />
       <simple-id uuid='{4C056FC4-B205-4FF2-93DF-26229ADE54B5}' />
     </window>
-    <window class='worksheet' name='시트 7'>
+    <window class='worksheet' name='구취'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2000,12 +2479,119 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='28'>
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' type='color' />
+          </strip>
+        </edge>
       </cards>
-      <simple-id uuid='{6598F7A7-A9A1-4A1F-8301-D3A31206FD8A}' />
+      <simple-id uuid='{6EF3A99A-BB59-4D20-9E44-0D75D5936677}' />
+    </window>
+    <window class='worksheet' name='치아흔들림'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2769A0C4-2EED-40C7-A76E-DF2CCBCEF942}' />
+    </window>
+    <window class='worksheet' name='시린니'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B549A88-DB5C-4AC1-B3B2-B544E9299FD0}' />
+    </window>
+    <window class='worksheet' maximized='true' name='잇몸부종'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bi9dt00sopmrg14dhqel1ldpsl5].[none:성별:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E547E3D9-6C6F-4F88-9C4C-D35542270711}' />
+    </window>
+    <window class='dashboard' name='대시보드 2'>
+      <viewpoints>
+        <viewpoint name='구취'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='시린니'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='잇몸부종'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='치아흔들림'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C3F63DF7-143E-42C4-8E35-E81F3B006DF3}' />
     </window>
   </windows>
 </workbook>
